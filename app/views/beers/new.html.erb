@@ -1,0 +1,25 @@
+<h1>Nueva Cerveza</h1>
+
+<%= form_with(model: @beer, url: beers_path, local: true, class: "beer-form") do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :style %>
+    <%= form.text_field :style, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :abv %>
+    <div class="input-group">
+    <%= form.number_field :abv, class: "form-control" %>
+    <div class="input-group-append">
+    <%= form.submit "Create Beer", class: "btn btn-primary" %>
+   </div>
+  </div>
+</div>
+<% end %>
+
+

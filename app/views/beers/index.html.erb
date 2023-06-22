@@ -1,0 +1,24 @@
+<h1>Beers</h1>
+
+<div class="beer-table-container">
+  <table class="beer-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Style</th>
+        <th>ABV</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @beers.each do |beer| %>
+        <tr>
+          <td><%= beer.name %></td>
+          <td><%= beer.style %></td>
+          <td><%= beer.abv %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+

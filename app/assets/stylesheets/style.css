@@ -1,0 +1,23 @@
+.beer-table-container {
+    margin-top: 20px;
+  }
+  
+  .beer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .beer-table th,
+  .beer-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .beer-table th {
+    background-color: #f9f9f9;
+  }
+  
+  .beer-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
